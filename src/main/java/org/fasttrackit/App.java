@@ -1,4 +1,5 @@
 package org.fasttrackit;
+// one-line comment added
 
 public class App 
 {
