@@ -16,7 +16,11 @@ public class App
 
         carReference.engine =  new Engine();
         carReference.engine.manufacturer =  "VW";
-                carReference.engine.capacity = 1900
+        carReference.engine.capacity = 1900;
+
+        Engine engine1 = new Engine();
+        engine1.manufacturer = "VW";
+        engine1.capacity = 1900;
 
 
         System.out.println(carReference.make);
@@ -51,14 +55,12 @@ public class App
         System.out.println(car2.make);
         System.out.println(carReference.make);
 
+        car2.make = "Audi";
 
-//        car2.make = "Audi";
-//
-//        System.out.println("Updated name");
-//        System.out.println(car2.make);
-//        System.out.println(carReference.make);
-//
-//
+        System.out.println("Updated name");
+        System.out.println(car2.make);
+       System.out.println(carReference.make);
+
 
 
 
