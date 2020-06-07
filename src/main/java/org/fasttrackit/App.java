@@ -14,6 +14,10 @@ public class App
         carReference.color = "red";
         carReference.maxSpeed = 300;
 
+        carReference.engine =  new Engine();
+        carReference.engine.manufacturer =  "VW";
+                carReference.engine.capacity = 1900
+
 
         System.out.println(carReference.make);
         System.out.println(carReference.model);
@@ -48,20 +52,13 @@ public class App
         System.out.println(carReference.make);
 
 
-        car2.make = "Audi";
-
-        System.out.println("Updated name");
-        System.out.println(car2.make);
-        System.out.println(carReference.make);
-
-        car2 = carReference;
-
-        System.out.println(car2.make);
-        System.out.println(carReference.make);
-
-        car2.make =  "Audi";
-        System.out.println(car2.make);
-        System.out.println(carReference.make);
+//        car2.make = "Audi";
+//
+//        System.out.println("Updated name");
+//        System.out.println(car2.make);
+//        System.out.println(carReference.make);
+//
+//
 
 
 
