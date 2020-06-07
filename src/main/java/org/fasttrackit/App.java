@@ -31,6 +31,11 @@ public class App
         car2.model = "CLS";
         car2.color = "black";
 
+        Car car2Backup = car2;
+
+        car2 = carReference;
+
+
 
         // concatenation
         System.out.println(car2.make +" " + carReference.make);
@@ -45,9 +50,18 @@ public class App
 
         car2.make = "Audi";
 
+        System.out.println("Updated name");
         System.out.println(car2.make);
         System.out.println(carReference.make);
 
+        car2 = carReference;
+
+        System.out.println(car2.make);
+        System.out.println(carReference.make);
+
+        car2.make =  "Audi";
+        System.out.println(car2.make);
+        System.out.println(carReference.make);
 
 
 
