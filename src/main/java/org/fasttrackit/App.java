@@ -86,5 +86,10 @@ public class App
 //
 //        System.out.println("Is 4 even?");
 //        System.out.println(5 % 2 == 0);
+ }
+public void makeSound(Vehicle vehicle) {
+   System.out.println("Repairing vehicle " + vehicle.make);
+vehicle.totalTravelDistance -= 1000;
+    vehicle.damaged = false;
 }
 }
