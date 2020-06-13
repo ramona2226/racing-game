@@ -14,6 +14,12 @@ public class App
         carReference.color = "red";
         carReference.maxSpeed = 300;
 
+
+
+
+
+
+
         carReference.engine =  new Engine();
         carReference.engine.manufacturer =  "VW";
         carReference.engine.capacity = 1900;
@@ -21,6 +27,16 @@ public class App
         Engine engine1 = new Engine();
         engine1.manufacturer = "VW";
         engine1.capacity = 1900;
+
+
+        carReference.engine = engine1;
+
+
+
+        carReference.accelerate(60, 1);
+
+
+
 
 
         System.out.println(carReference.make);
@@ -34,10 +50,13 @@ public class App
         System.out.println(carReference.doorCount);
 
 
+
         Car car2 = new Car();
         car2.make = "Mercedes";
         car2.model = "CLS";
-        car2.color = "black";
+
+        double car2Distance = car2.accelerate(120, 3);
+
 
         Car car2Backup = car2;
 

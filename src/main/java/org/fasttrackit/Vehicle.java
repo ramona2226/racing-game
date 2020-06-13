@@ -15,24 +15,28 @@ public class Vehicle {
 
     public double accelerate(double speed, double durationInHours) {
 // Dacia is accelerating with 60 km/h for 1 h
-        System.out.println(make + " is acelerating with " + speed + "km/h for" + durationInHours + "h" +);
+        System.out.println(make + " is acelerating with " + speed + "km/h for" + durationInHours + "h");
+
         double distance = speed * durationInHours;
+        totalTravelDistance = totalTravelDistance + distance;
+
 
                 //same result as the statment above;
         // totalTravelDistance += distance;
 
-        System.out.println(: Total traveled distance: " + totalTravelDistance");
+        System.out.println("Total traveled distance: " +
+                " + totalTravelDistance");
 
-        double usedFuel  = distance * milage / 100;
+        double usedFuel  = distance * mileage / 100;
         fuelLevel = fuelLevel - usedFuel;
-        fuelLevel-= usedFuel;
+      //  fuelLevel-= usedFuel;
 
-        System.out.println("Remaining fuel : " + fuelLevel);
+        System.out.println("Remaining fuel: " + fuelLevel);
 
         return distance;
 
 
 
-        return 10.9;
+
     }
 }
