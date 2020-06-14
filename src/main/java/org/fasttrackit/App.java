@@ -32,11 +32,15 @@ public class App
         carReference.engine = engine1;
 
 
-
-        carReference.accelerate(60, 1);
-
+double currentDistance = carReference.accelerate(60, 1);
 
 
+        System.out.println("Total distance before repair:" + carReference.totalTravelDistance);
+
+        Mechanic mechanic = new Mechanic();
+        mechanic.repair(carReference);
+
+        System.out.println("Total distance after repair:" + carReference.totalTravelDistance);
 
 
         System.out.println(carReference.make);
@@ -56,6 +60,8 @@ public class App
         car2.model = "CLS";
 
         double car2Distance = car2.accelerate(120, 3);
+
+
 
 
         Car car2Backup = car2;

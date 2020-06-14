@@ -10,5 +10,7 @@ vehicle.totalTravelDistance -= 1000;
 
 vehicle.damaged = false;
 
+//double  curentDistance =
+
 }
 }
