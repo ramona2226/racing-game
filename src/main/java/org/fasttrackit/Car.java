@@ -1,17 +1,36 @@
+
+
 package org.fasttrackit;
 
+// "is-a" relationship (inheritance)
+public class Car extends AutoVehicle {
 
-// "is-a" relationship (inheritans)
-public class Car  extends AutoVehicle {
+    private int doorCount;
 
+    public Car(Engine engine) {
+        super(engine);
+    }
 
+    // constructor overloading
+    public Car() {
+        this(new Engine());
+    }
 
-    int doorCount ;
+    public int getDoorCount() {
+        return doorCount;
+    }
 
+    public void setDoorCount(int doorCount) {
+        this.doorCount = doorCount;
+    }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "doorCount=" + doorCount +
+                "} " + super.toString();
+    }
+}
 
 
 

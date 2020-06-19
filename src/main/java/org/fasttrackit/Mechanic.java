@@ -3,14 +3,10 @@ package org.fasttrackit;
 public class Mechanic {
 
     public void repair(Vehicle vehicle) {
+        System.out.println("Repairing vehicle " + vehicle.getMake());
 
-System.out.println("Repairing vehicle "+ vehicle.make);
+        vehicle.setTotalTraveledDistance(vehicle.getTotalTraveledDistance() - 1000);
 
-vehicle.totalTravelDistance -= 1000;
-
-vehicle.damaged = false;
-
-//double  curentDistance =
-
-}
+        vehicle.setDamaged(false);
+    }
 }
